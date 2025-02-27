@@ -49,16 +49,19 @@ nombres = []
 identificaciones = [] 
 # Definimos un tamaño para las listas 
 # Lo puedes cambiar si quieres 
-tamaño = 3 
+res="s"
+tama = 0
 # Leemos los datos y los agregamos a la lista 
-for i in range(tamaño): 
-    print("Ingrese los datos de la persona", i + 1) 
+while res == "s":
+    print("Ingrese los datos de la persona", tama + 1) 
     nombre = input("Nombre: ") 
-    identificación = input("Identificación: ") 
+    identificación = input("Identificación: ") 
     nombres.append(nombre) 
-    identificaciones.append(identificación) 
+    identificaciones.append(identificación) 
+    tama += 1
+    res=input("Deseas ingresar otro nombre s/n")
 # Ahora mostremos las listas 
-for i in range(tamaño): 
+for i in range(tama):
     print("Mostrando los datos de la persona", i + 1) 
     print("Nombre:", nombres[i]) 
-    print("Identificación:", identificaciones[i])
+    print("Identificación:", identificaciones[i])
