@@ -35,7 +35,7 @@ print(números)
 # Mostrará [10, 5, 3]
 
 palabras = ['hola', 'hello', 'ola'] 
-palabras.pop(-5) 
+palabras.pop(1) 
 print(palabras) 
 # Mostrará ['hola', 'ola']
 
